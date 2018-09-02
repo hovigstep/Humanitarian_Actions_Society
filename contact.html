@@ -17,6 +17,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+<?php include 'send-mail.php';?>
 </head>
 
 <body>
@@ -177,10 +179,10 @@
                         <h4>Leave a Reply</h4>
 
                         <!--Contact Form-->
-                        <form method="post" action="http://themebunch.com/html/varna-charity/sendemail.php" id="contact-form">
+                        <form method="post" action="send-mail.php" id="contact-form">
                             <div class="row clearfix">
                                 <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-                                    <input type="text" name="username" placeholder="Name" required>
+                                    <input type="text" name="first_name" placeholder="Name" required>
                                 </div>
                                 
                                 <div class="col-md-6 col-sm-12 col-xs-12 form-group">
@@ -192,7 +194,7 @@
                                 </div>
                                 
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group text-center">
-                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Send Now</button>
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit">Send Now</button>
                                 </div>
                             </div>
                         </form>
@@ -212,7 +214,7 @@
             <div class="auto-container">
                 <div class="outer-box">
                     <!--Footer Logo-->
-                    <div class="footer-logo"><a href="index-2.html"><img src="images/footer-logo.png" alt=""></a></div>
+                    <div class="footer-logo"><a href="index.html"><img src="images/footer-logo.png" alt=""></a></div>
                     
                     <div class="row clearfix">
                         <div class="big-column col-md-5 col-sm-12 col-xs-12">
